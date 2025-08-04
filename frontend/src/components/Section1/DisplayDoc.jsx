@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import RotatingText from '../../animations/RotatingText';
+// import RotatingText from '../../animations/RotatingText';
 
 
 const DisplayDoc = () => {

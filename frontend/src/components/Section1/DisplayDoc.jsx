@@ -25,11 +25,11 @@ const DisplayDoc = () => {
     };
 
     return (
-        <main className="max-w-screen h-auto lg:bg-gradient-to-r lg:from-[#FFE6A5] to-[#FFE6A5] py-5 px-6 md:px-20">
+        <main className="min-w-screen h-auto   bg-gradient-to-r from-[#FFE6A5] to-[#FFE6A5] py-5 px-6 md:px-20">
             <div className="w-full mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
 
                 {/* Left Content */}
-                <div className="flex-1 space-y-6 h-1/2 mt-20">
+                <div className="flex-1 space-y-6 h-1/2 mt-20 w-full">
                     <p className="text-[#666666] text-lg">Namaste, Welcome to Amrutam</p>
 
                     {/* Animated Title */}

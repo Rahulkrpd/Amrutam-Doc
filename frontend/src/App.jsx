@@ -1,5 +1,7 @@
 
+import ConnectForm from './components/ConnectForm/ConnectForm'
 import FAQ from './components/FAQ/FAQ'
+import Footer from './components/Footer.jsx/Footer'
 import Navbar from './components/Header/Navbar'
 import PopupLogin from './components/Header/PopupLogin'
 import DisplayDoc from './components/Section1/DisplayDoc'
@@ -23,6 +25,8 @@ function App() {
       <Testimonials />
       <FAQ />
       <Connect />
+      <ConnectForm />
+      <Footer />
     </>
   )
 }

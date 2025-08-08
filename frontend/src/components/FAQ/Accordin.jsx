@@ -17,7 +17,7 @@ export default function Accordion() {
     };
 
     return (
-        <div className="max-w-4/5 mx-auto bg-[#fdf5e6] p-4 rounded-lg space-y-2">
+        <div className="max-w-4/5 mx-auto bg-[#fdf5e6] p-4 rounded-lg space-y-2 ">
             {faqs.map((item, index) => (
                 <div
                     key={index}

@@ -21,10 +21,10 @@ const SliderContent = () => {
 
 
     return (
-        <div className='bg-[#FFF7E2] min-w-screen min-h-screen py-5 '>
-            <div className=' border-solid flex flex-col justify-center items-center '>
+        <div className='bg-[#FFF7E2] w-full  p-5 py-10'>
+            <div className=' border-solid flex flex-col justify-center items-center  '>
                 {/* upper div */}
-                <div className='w-2/5 gap-3 flex justify-between'>
+                <div className='md:w-2/5 gap-3 flex justify-between  w-full'>
                     {buttonContent.map((btn) => (
                         <button
                             key={btn.id}

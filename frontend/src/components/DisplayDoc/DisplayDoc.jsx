@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 // import RotatingText from '../../animations/RotatingText';
+import AuthModal from '../Login/Login';
 
 
 const DisplayDoc = () => {
@@ -7,6 +8,8 @@ const DisplayDoc = () => {
     const [textIndex, setTextIndex] = useState(0);
     const intervalRef = useRef(null);
     const timeoutRef = useRef(null);
+
+
 
     const handleMouseEnter = () => {
         timeoutRef.current = setTimeout(() => {
@@ -24,9 +27,11 @@ const DisplayDoc = () => {
         setTextIndex(0); // reset to default
     };
 
+
+
     return (
-        <main className="min-w-screen h-auto   bg-gradient-to-r from-[#FFE6A5] to-[#FFE6A5] py-5 px-6 md:px-20">
-            <div className="w-full mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+        <main className="w-full h-auto bg-gradient-to-r from-[#FFE6A5]/80 to-[#FFE6A5]/50 py-5 px-4 md:px-20">
+            <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
 
                 {/* Left Content */}
                 <div className="flex-1 space-y-6 h-1/2 mt-20 w-full">
@@ -54,13 +59,15 @@ const DisplayDoc = () => {
                         Join Now
                     </button>
 
+
+
                     {/* Stats */}
-                    <div className="flex gap-10 pt-8">
+                    <div className="flex gap-4 md:gap-10 pt-8 flex-wrap">
                         <div className="text-center">
                             <h2 className="text-2xl font-bold">500+</h2>
                             <p className="text-[#4D4D4D] text-sm">Average Active Users</p>
                         </div>
-                        <div className="border-l border-[#999] h-auto"></div>
+                        <div className="border-l border-[#999] h-auto hidden md:block"></div>
                         <div className="text-center">
                             <h2 className="text-2xl font-bold">40+</h2>
                             <p className="text-[#4D4D4D] text-sm">Average daily free calls</p>
@@ -71,7 +78,7 @@ const DisplayDoc = () => {
                 {/* Right Side Images */}
                 <div className="hidden lg:flex flex-1 relative justify-center items-center">
                     <img src="./Group.svg" alt="doctors" className="relative z-10 w-full max-w-[40%] md:max-w-3/4" />
-                    <img src="./FrameYoga.svg" alt="icon1" className="absolute top-8 right-10 lg:w-15 xl:w-24 h-auto z-20" />
+                    <img src="./FrameYoga.svg" alt="icon1" className="absolute top-8 right-10 lg:w-15 xl:w-24 h-auto z-20 " />
                     <img src="./FrameBag.svg" alt="icon2" className="absolute bottom-8 right-16 lg:w-15 xl:w-24 h-auto z-20" />
                     <img src="./FrameCup.svg" alt="icon3" className="absolute bottom-2 left-20 lg:w-15 xl:w-24 h-auto z-20" />
                 </div>

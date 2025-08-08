@@ -14,19 +14,19 @@ const ConnectForm = () => {
     };
 
     return (
-        <div className="bg-[#FFF7E2] py-36 px-6 md:px-20">
+        <div className="bg-[#FFF7E2] py-36 px-4 md:px-20 w-full">
             {/* Heading */}
             <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-5xl font-bold text-[#3A643C]">Let’s Connect</h2>
-                <p className="text-[#333333] mt-4 text-base md:text-lg max-w-3xl mx-auto">
-                    We’re here to help you on your wellness journey. Reach out to us for any questions, product inquiries, or personalized advice.
+                <h2 className="text-2xl md:text-5xl font-bold text-[#3A643C]">Let's Connect</h2>
+                <p className="text-[#333333] mt-4 text-base md:text-lg max-w-3xl mx-auto px-4">
+                    We're here to help you on your wellness journey. Reach out to us for any questions, product inquiries, or personalized advice.
                 </p>
             </div>
 
             {/* Form Section */}
-            <div className="flex flex-col md:flex-row justify-center items-stretch gap-10">
+            <div className="flex flex-col lg:flex-row justify-center items-stretch gap-10 max-w-7xl mx-auto">
                 {/* Left Image */}
-                <div className="w-full md:w-1/3">
+                <div className="w-full lg:w-1/3">
                     <img
                         src="./contentImage.svg"
                         alt="Herbal Contact"
@@ -35,9 +35,9 @@ const ConnectForm = () => {
                 </div>
 
                 {/* Right Form */}
-                <div className="w-full md:w-1/2 bg-[#FFF7E2] p-6 md:p-10 rounded-xl shadow border border-[#C2C2C2]">
+                <div className="w-full lg:w-1/2 bg-[#FFF7E2] p-6 md:p-10 rounded-xl shadow border border-[#C2C2C2]">
                     {/* Name and Contact Row */}
-                    <div className="flex flex-col md:flex-row gap-10 mb-6">
+                    <div className="flex flex-col md:flex-row gap-6 md:gap-10 mb-6">
                         <div className="flex-1">
                             <label className="text-sm font-medium text-[#3A643C] mb-10">Your Name</label>
                             <input

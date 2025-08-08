@@ -42,7 +42,7 @@ const AuthModal = ({ closeModal, isLogin, toggleMode, onSuccess }) => {
 
     return (
         <div className="fixed inset-0 z-50 bg-black bg-opacity-40 flex items-center justify-center">
-            <div className="bg-white p-8 rounded-xl  border-2 border-red-400 lg:w-6/12 max-w-md relative">
+            <div className="bg-white p-8 rounded-xl   lg:w-6/12 max-w-md relative">
                 <button className="absolute top-2 right-3 text-gray-500" onClick={closeModal}>
                     &times;
                 </button>
